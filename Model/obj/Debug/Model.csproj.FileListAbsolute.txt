@@ -1,0 +1,11 @@
+D:\Solutions\ImportCSVFile\Model\bin\Debug\Model.dll.config
+D:\Solutions\ImportCSVFile\Model\bin\Debug\Model.dll
+D:\Solutions\ImportCSVFile\Model\bin\Debug\Model.pdb
+D:\Solutions\ImportCSVFile\Model\bin\Debug\EntityFramework.dll
+D:\Solutions\ImportCSVFile\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Solutions\ImportCSVFile\Model\bin\Debug\EntityFramework.xml
+D:\Solutions\ImportCSVFile\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Solutions\ImportCSVFile\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Solutions\ImportCSVFile\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Solutions\ImportCSVFile\Model\obj\Debug\Model.dll
+D:\Solutions\ImportCSVFile\Model\obj\Debug\Model.pdb
