@@ -19,3 +19,24 @@ D:\Solutions\ImportCSVFile\ImportCSV\bin\Debug\Context.dll.config
 D:\Solutions\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.csproj.CopyComplete
 D:\Solutions\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.dll
 D:\Solutions\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\ImportCSV.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\ImportCSV.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\ImportCSV.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\EntityFramework.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Model.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Repository.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Context.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Model.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Model.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Repository.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Repository.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\EntityFramework.xml
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Context.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\bin\Debug\Context.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.csprojAssemblyReference.cache
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.csproj.CoreCompileInputs.cache
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.csproj.CopyComplete
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\ImportCSV\obj\Debug\ImportCSV.pdb

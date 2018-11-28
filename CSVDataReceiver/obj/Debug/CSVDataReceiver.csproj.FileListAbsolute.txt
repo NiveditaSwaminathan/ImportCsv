@@ -1,0 +1,56 @@
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.exe.config
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.exe
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Antlr4.Runtime.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.SqlServer.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.dll
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.dll.config
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.xml
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.SqlServer.xml
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.xml
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.dll.config
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.dll.config
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.pdb
+D:\Solutions\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.dll.config
+D:\Solutions\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csprojAssemblyReference.cache
+D:\Solutions\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csproj.CoreCompileInputs.cache
+D:\Solutions\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csproj.CopyComplete
+D:\Solutions\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.exe
+D:\Solutions\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.exe.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.exe
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\CSVDataReceiver.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Antlr4.Runtime.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.dll
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\ImportCSV.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.xml
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\System.CommandLine.Parser.xml
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Repository.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Context.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.pdb
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\bin\Debug\Model.dll.config
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csprojAssemblyReference.cache
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csproj.CoreCompileInputs.cache
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.csproj.CopyComplete
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.exe
+D:\Project Notes\Elsevier_Test\ImportCSVFile\CSVDataReceiver\obj\Debug\CSVDataReceiver.pdb

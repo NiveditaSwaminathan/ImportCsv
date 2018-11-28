@@ -1,0 +1,1268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.CommandLine.Parser</name>
+    </assembly>
+    <members>
+        <member name="T:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1">
+            <summary>
+            This class provides an empty implementation of <see cref="T:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1"/>, which can be extended to create a visitor which only needs to handle a subset of the available methods.
+            </summary>
+            <typeparam name="TResult">The return type of the visit operation.</typeparam>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitCommandLine(System.CommandLine.Parser.Antlr.CommandLineParser.CommandLineContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.commandLine"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitDefaultParameterString(System.CommandLine.Parser.Antlr.CommandLineParser.DefaultParameterStringContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.DefaultParameterString"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitWindowsStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleSwitchContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.WindowsStyleSwitch"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/>on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitWindowsStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleParameterContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.WindowsStyleParameter"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitUnixStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleParameterContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.UnixStyleParameter"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitUnixStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleSwitchContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.UnixStyleSwitch"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitUnixStyleAliasParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleAliasParameterContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.UnixStyleAliasParameter"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/>on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitUnixStyleFlaggedSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleFlaggedSwitchContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.UnixStyleFlaggedSwitch"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitString(System.CommandLine.Parser.Antlr.CommandLineParser.StringContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="F:System.CommandLine.Parser.Antlr.CommandLineParser.String"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitNumber(System.CommandLine.Parser.Antlr.CommandLineParser.NumberContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="F:System.CommandLine.Parser.Antlr.CommandLineParser.Number"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitArray(System.CommandLine.Parser.Antlr.CommandLineParser.ArrayContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.Array"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineBaseVisitor`1.VisitBoolean(System.CommandLine.Parser.Antlr.CommandLineParser.BooleanContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="!:CommandLineParser.Boolean"/>. The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)"/> on <paramref name="context"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="T:System.CommandLine.Parser.Antlr.CommandLineLexer">
+            <summary>
+            Represents the lexer, which turns the command line parameter input from a character stream to a stream of tokens.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineLexer.#ctor(Antlr4.Runtime.ICharStream)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.Antlr.CommandLineLexer"/> instance.
+            </summary>
+            <param name="input">The character stream, which is the contains the input to the lexer and is to be tokenized.</param>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer._LiteralNames">
+            <summary>
+            Contains the names of the literals that are recognized by the command line lexer.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer._SymbolicNames">
+            <summary>
+            Contains the symbolic names of the lexer rules as specified in the original grammar.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.modeNames">
+            <summary>
+            Contains the name of all available modes of the lexer.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.ruleNames">
+            <summary>
+            Contains the names of all the rules of the lexer grammar.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.DefaultVocabulary">
+            <summary>
+            Contains the default vocabulary of the lexer.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer._serializedATN">
+            <summary>
+            Contains the serialized automaton used for lexing the input. This is derived from the lexer grammar.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer._ATN">
+            <summary>
+            Contains the automaton that is used for lexing the input.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.T__0">
+            <summary>
+            Contains the ID of the first rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.T__1">
+            <summary>
+            Contains the ID of the second rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.T__2">
+            <summary>
+            Contains the ID of the third rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.UnixStyleFlaggedIdentifiers">
+            <summary>
+            Contains the ID of the UNIX style flagged identifiers rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.WindowsStyleIdentifier">
+            <summary>
+            Contains the ID of the Windows style identifier rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.UnixStyleIdentifier">
+            <summary>
+            Contains the ID of the UNIX style identifier rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.AssignmentOperator">
+            <summary>
+            Contains the ID of the assignment operator rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.True">
+            <summary>
+            Contains the ID of the rule for the boolean value true.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.False">
+            <summary>
+            Contains the ID of the rule for the boolean value false.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.Number">
+            <summary>
+            Contains the ID of the rule for numbers.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.Digit">
+            <summary>
+            Contains the ID of the rule for digits.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.String">
+            <summary>
+            Contains the ID of the rule for strings.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.QuotedString">
+            <summary>
+            Contains the ID of the rule for quoted strings.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineLexer.WhiteSpaces">
+            <summary>
+            Contains the ID of the rule for white spaces.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineLexer.Vocabulary">
+            <summary>
+            Gets the vocabulary of the lexer.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineLexer.GrammarFileName">
+            <summary>
+            Gets the name of the grammar file from which the lexer was generated.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineLexer.RuleNames">
+            <summary>
+            Gets the names of the rules of the lexer.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineLexer.ModeNames">
+            <summary>
+            Gets the names of the modes that the lexer supports.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineLexer.SerializedAtn">
+            <summary>
+            Gets the serialized automaton, which is used by the lexer.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Antlr.CommandLineParser">
+            <summary>
+            Represents the parser, which applies the grammar rules to the token stream generated by the lexer and generates an abstract syntax tree from it.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineParser.#ctor(Antlr4.Runtime.ITokenStream)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.Antlr.CommandLineParser"/> instance.
+            </summary>
+            <param name="input">The token stream, which is the input to the parser and was generated by the lexer.</param>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser._LiteralNames">
+            <summary>
+            Contains the names of the literals of the command line lexer.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser._SymbolicNames">
+            <summary>
+            Contains the symbolic names of the lexer rules as specified in the original grammar of the lexer.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.ruleNames">
+            <summary>
+            Contains the names of all the rules of the parser grammar.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.DefaultVocabulary">
+            <summary>
+            Contains the default vocabulary of the parser.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser._serializedATN">
+            <summary>
+            Contains the serialized automaton used for parsing the input. This is derived from the parser grammar.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser._ATN">
+            <summary>
+            Contains the automaton that is used for parsing the input.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.T__0">
+            <summary>
+            Contains the ID of the first lexer rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.T__1">
+            <summary>
+            Contains the ID of the second lexer rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.T__2">
+            <summary>
+            Contains the ID of the third lexer rule, which is an implicit one.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleFlaggedIdentifiers">
+            <summary>
+            Contains the ID of the UNIX style flagged identifiers lexer rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleIdentifier">
+            <summary>
+            Contains the ID of the Windows style identifier lexer rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleIdentifier">
+            <summary>
+            Contains the ID of the UNIX style identifier lexer rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.AssignmentOperator">
+            <summary>
+            Contains the ID of the assignment operator lexer rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.True">
+            <summary>
+            Contains the ID of the lexer rule for the boolean value true.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.False">
+            <summary>
+            Contains the ID of the lexer rule for the boolean value false.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.Number">
+            <summary>
+            Contains the ID of the lexer rule for numbers.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.Digit">
+            <summary>
+            Contains the ID of the lexer rule for digits.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.String">
+            <summary>
+            Contains the ID of the lexer rule for strings.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.QuotedString">
+            <summary>
+            Contains the ID of the lexer rule for quoted strings.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.WhiteSpaces">
+            <summary>
+            Contains the ID of the lexer rule for white spaces.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.RULE_commandLine">
+            <summary>
+            Contains the ID of the command line parser rule, which is the starting rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.RULE_defaultParameter">
+            <summary>
+            Contains the ID of the default parameter parser rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.RULE_parameter">
+            <summary>
+            Contains the ID of the parameter parser rule.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Antlr.CommandLineParser.RULE_value">
+            <summary>
+            Contains the ID of the value parser rule.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineParser.Vocabulary">
+            <summary>
+            Gets the vocabulary of the parser.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineParser.GrammarFileName">
+            <summary>
+            Gets the name of the grammar file from which the parser was generated.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineParser.RuleNames">
+            <summary>
+            Gets the names of the rules of the parser.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Antlr.CommandLineParser.SerializedAtn">
+            <summary>
+            Gets the serialized automaton, which is used by the parser.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineParser.commandLine">
+            <summary>
+            Invokes the parsing of the command line parser rule, which is the starting rule.
+            </summary>
+            <returns>Returns the parse tree that was generated.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.CommandLineParser.value">
+            <summary>
+            Invokes the parsing of the value parser rule.
+            </summary>
+            <returns>Returns the parse tree that was generated.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1">
+            <summary>
+            This interface defines a complete generic visitor for a parse tree produced by <see cref="T:System.CommandLine.Parser.Antlr.CommandLineParser"/>.
+            </summary>
+            <typeparam name="TResult">The return type of the visit operation.</typeparam>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitCommandLine(System.CommandLine.Parser.Antlr.CommandLineParser.CommandLineContext)">
+            <summary>
+            Visit a parse tree produced by <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.commandLine"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitDefaultParameterString(System.CommandLine.Parser.Antlr.CommandLineParser.DefaultParameterStringContext)">
+            <summary>
+            Visit a parse tree produced by the <c>DefaultParameterString</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.defaultParameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitWindowsStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleSwitchContext)">
+            <summary>
+            Visit a parse tree produced by the <c>WindowsStyleSwitch</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitWindowsStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleParameterContext)">
+            <summary>
+            Visit a parse tree produced by the <c>WindowsStyleParameter</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitUnixStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleParameterContext)">
+            <summary>
+            Visit a parse tree produced by the <c>UnixStyleParameter</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitUnixStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleSwitchContext)">
+            <summary>
+            Visit a parse tree produced by the <c>UnixStyleSwitch</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitUnixStyleAliasParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleAliasParameterContext)">
+            <summary>
+            Visit a parse tree produced by the <c>UnixStyleAliasParameter</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitUnixStyleFlaggedSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleFlaggedSwitchContext)">
+            <summary>
+            Visit a parse tree produced by the <c>UnixStyleFlaggedSwitch</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.parameter"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitString(System.CommandLine.Parser.Antlr.CommandLineParser.StringContext)">
+            <summary>
+            Visit a parse tree produced by the <c>String</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.value"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitNumber(System.CommandLine.Parser.Antlr.CommandLineParser.NumberContext)">
+            <summary>
+            Visit a parse tree produced by the <c>Number</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.value"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitArray(System.CommandLine.Parser.Antlr.CommandLineParser.ArrayContext)">
+            <summary>
+            Visit a parse tree produced by the <c>Array</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.value"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.Antlr.ICommandLineVisitor`1.VisitBoolean(System.CommandLine.Parser.Antlr.CommandLineParser.BooleanContext)">
+            <summary>
+            Visit a parse tree produced by the <c>Boolean</c> labeled alternative in <see cref="M:System.CommandLine.Parser.Antlr.CommandLineParser.value"/>.
+            </summary>
+            <param name="context">The parse tree.</param>
+            <return>The visitor result.</return>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParserException.#ctor(System.Collections.Generic.IEnumerable{System.CommandLine.Parser.ParserError})">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> instance.
+            </summary>
+            <param name="parserErrors">The parser error that occurred.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParserException.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> instance.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParserException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> instance.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a <c>null</c> reference if no inner exception is specified.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> instance.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="P:System.CommandLine.Parser.CommandLineParserException.ParserErrors">
+            <summary>
+            Gets all the parser error that occurred.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.DefaultParameterAttribute">
+            <summary>
+            Represents an attribute, which can be used to specify that the property or constructor parameter is to be matched with one or multiple default command line parameters.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.LexerErrorListener">
+            <summary>
+            Represents a listener, which listens to errors during the lexing of the input and makes errors available in a simple way.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.LexerErrorListener.SyntaxError(Antlr4.Runtime.IRecognizer,System.Int32,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)">
+            <summary>
+            Is invoked when a lexical error is detected in the lexer.
+            </summary>
+            <param name="recognizer">The lexer that found the lexical error.</param>
+            <param name="offendingSymbol">The ID of the symbol that caused the error.</param>
+            <param name="line">The line number where the error occurred.</param>
+            <param name="charPositionInLine">The index of the character where the error starts within the current line.</param>
+            <param name="msg">The error message that was produced.</param>
+            <param name="e">The original exception that was thrown when the error occurred.</param>
+        </member>
+        <member name="F:System.CommandLine.Parser.LexerErrorListener.errors">
+            <summary>
+            Contains all the lexical errors that have been found.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.LexerErrorListener.Errors">
+            <summary>
+            Gets all the lexical errors that have been found.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParserError">
+            <summary>
+            Represents an error, which occurred while lexing or parsing the input.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParserError.#ctor(System.Int32,System.String,System.CommandLine.Parser.ParserErrorKind)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.ParserError"/> instance.
+            </summary>
+            <param name="startIndex">The index at which the offending symbol starts.</param>
+            <param name="offendingSymbol">The symbol that caused the error.</param>
+            <param name="kind">The kind of error that happened.</param>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParserError.StartIndex">
+            <summary>
+            Gets the index at which the offending symbol starts.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParserError.OffendingSymbol">
+            <summary>
+            Gets the symbol that caused the error.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParserError.Kind">
+            <summary>
+            Gets the kind of error that happened.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.CollectionOfBooleanParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert array parameters into any type of boolean collection.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfBooleanParameterConverter.conversionMap">
+            <summary>
+            Contains a map of all supported collection types, that maps the type to a conversion method, which converts the original values into the specified collection type.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfBooleanParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfBooleanParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert array parameters into any type of enumeration collection.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter.supportedCollectionTypes">
+            <summary>
+            Contains a list of all the collection types that are supported by the <see cref="T:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter"/> parameter converter.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter.collectionTypeConversionMap">
+            <summary>
+            Contains a conversion map, which maps the supported types to the concrete type that are instantiated as a result.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfEnumerationParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert array parameters into any type of number collection.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter.supportedCollectionTypes">
+            <summary>
+            Contains a list of all the collection types that are supported by the <see cref="T:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter"/> parameter converter.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter.supportedNumberTypes">
+            <summary>
+            Contains a list of all the CLR number types that are supported by the <see cref="T:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter"/> parameter converter.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter.collectionTypeConversionMap">
+            <summary>
+            Contains a conversion map, which maps the supported types to the concrete type that are instantiated as a result.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfNumberParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.CollectionOfStringParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert array parameters into any type of string collection.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParameterConverters.CollectionOfStringParameterConverter.conversionMap">
+            <summary>
+            Contains a map of all supported collection types, that maps the type to a conversion method, which converts the original values into the specified collection type.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfStringParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.CollectionOfStringParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.BooleanParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert parameters into boolean types.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.BooleanParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.BooleanParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.EnumerationParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert parameters into enumeration types.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.EnumerationParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.EnumerationParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.NumberParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert parameters into CLR number types.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.NumberParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.NumberParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.StringParameterConverter">
+            <summary>
+            Represents a parameter converter, which is able to convert parameters into string types.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.StringParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.StringParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <exception cref="T:System.InvalidOperationException">If the parameter could not be converted, an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterConverters.IParameterConverter">
+            <summary>
+            Represents the interface that all parameter converters have to implement. Parameter converters are used to convert the parsed parameters into the real values that are
+            injected into the POCO objects.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.IParameterConverter.CanConvert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Dertermines whether the specified parameter can be converted into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameters that is to be converted into the specified type.</param>
+            <returns>Returns <c>true</c> if the specified parameter can be converted into the specified type and <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterConverters.IParameterConverter.Convert(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Converts the specified parameter into the specified type.
+            </summary>
+            <param name="propertyType">The type of the property into which the parameter is to be converted.</param>
+            <param name="parameter">The parameter that is to be converted into the specified type.</param>
+            <returns>Returns the converted parameter value.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.ArrayParameter">
+            <summary>
+            Represents an array command line parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.ArrayParameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.ArrayParameter.Value">
+            <summary>
+            Gets the boolean value of the command line parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.BooleanParameter">
+            <summary>
+            Represents a boolean command line parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.BooleanParameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.BooleanParameter.Value">
+            <summary>
+            Gets the boolean value of the command line parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.DefaultParameter">
+            <summary>
+            Represents a default parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.DefaultParameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.DefaultParameter.Value">
+            <summary>
+            Gets the value of the default parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.Parameter">
+            <summary>
+            Represents the abstract base class for the typed command line parameters.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.Parameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.NumberParameter">
+            <summary>
+            Represents a numeric command line parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.NumberParameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.NumberParameter.Value">
+            <summary>
+            Gets the numeric value of the command line parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.ParameterKind">
+            <summary>
+            Represents an enumeration for the different kinds of parameters.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Parameters.ParameterKind.Number">
+            <summary>
+            The parameter is of type number.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Parameters.ParameterKind.String">
+            <summary>
+            The parameter is of type string.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Parameters.ParameterKind.Boolean">
+            <summary>
+            The parameter is of type boolean.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Parameters.ParameterKind.Array">
+            <summary>
+            The parameter is of type array.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.Parameters.ParameterKind.Default">
+            <summary>
+            The parameter is a default parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.Parameters.StringParameter">
+            <summary>
+            Represents a string command line parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.StringParameter.Kind">
+            <summary>
+            Gets the kind of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.Parameters.StringParameter.Value">
+            <summary>
+            Gets the string value of the command line parameter.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.CommandLineVisitor">
+            <summary>
+            Represents a visitor for the command line parser, which implements the visitor pattern to evaluate the parse tree generated by the parser.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.CommandLineVisitor.americanCultureInfo">
+            <summary>
+            Contains an american culture info, which is used for number conversion.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.CommandLineVisitor.Parameters">
+            <summary>
+            Gets the parsed parameters.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.CommandLineVisitor.DefaultParameters">
+            <summary>
+            Gets the parsed default parameters.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitCommandLine(System.CommandLine.Parser.Antlr.CommandLineParser.CommandLineContext)">
+            <summary>
+            Is called when the visitor reaches the start rule of the grammar.
+            </summary>
+            <param name="context">The context, which contains all information about the start rule of the grammar</param>
+            <returns>Returns <c>null</c>, because nothing needs to be returned.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitDefaultParameterString(System.CommandLine.Parser.Antlr.CommandLineParser.DefaultParameterStringContext)">
+            <summary>
+            Is called when the visitor reaches a default parameter.
+            </summary>
+            <param name="context">The context, which contains all information about the default parameter that is being visited.</param>
+            <returns>Returns the default parameter that was being visited.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitBoolean(System.CommandLine.Parser.Antlr.CommandLineParser.BooleanContext)">
+            <summary>
+            Is called when the visitor reaches a boolean value.
+            </summary>
+            <param name="context">the context, which contains all information about the boolean value.</param>
+            <returns>Returns the parameter with the boolean value.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitNumber(System.CommandLine.Parser.Antlr.CommandLineParser.NumberContext)">
+            <summary>
+            Is called when the visitor reaches a number value.
+            </summary>
+            <param name="context">the context, which contains all information about the number value.</param>
+            <returns>Returns the parameter with the number value.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitString(System.CommandLine.Parser.Antlr.CommandLineParser.StringContext)">
+            <summary>
+            Is called when the visitor reaches a string value.
+            </summary>
+            <param name="context">the context, which contains all information about the string value.</param>
+            <returns>Returns the parameter with the string value.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitArray(System.CommandLine.Parser.Antlr.CommandLineParser.ArrayContext)">
+            <summary>
+            Is called when the visitor reaches an array value.
+            </summary>
+            <param name="context">the context, which contains all information about the array value.</param>
+            <returns>Returns the parameter with the array value.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitUnixStyleFlaggedSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleFlaggedSwitchContext)">
+            <summary>
+            Is called when the visitor reaches a UNIX style flagged switch.
+            </summary>
+            <param name="context">The context, which contains all the information about the UNIX style flagged switch.</param>
+            <returns>Returns <c>null</c> because the flags are directly added to the result set.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitUnixStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleSwitchContext)">
+            <summary>
+            Is called when the visitor reaches a UNIX style switch.
+            </summary>
+            <param name="context">The context, which contains all the information about the UNIX style switch.</param>
+            <returns>Returns <c>null</c> because the switch is directly added to the result set.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitWindowsStyleSwitch(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleSwitchContext)">
+            <summary>
+            Is called when the visitor reaches a Windows style switch.
+            </summary>
+            <param name="context">The context, which contains all the information about the Windows style switch.</param>
+            <returns>Returns <c>null</c> because the switch is directly added to the result set.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitUnixStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleParameterContext)">
+            <summary>
+            Is called when the visitor reaches a UNIX style parameter.
+            </summary>
+            <param name="context">The context, which contains all the information about the UNIX style parameter.</param>
+            <returns>Returns <c>null</c> because the parameter is directly added to the result set.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitUnixStyleAliasParameter(System.CommandLine.Parser.Antlr.CommandLineParser.UnixStyleAliasParameterContext)">
+            <summary>
+            Is called when the visitor reaches a UNIX style alias parameter.
+            </summary>
+            <param name="context">The context, which contains all the information about the UNIX style alias parameter.</param>
+            <returns>Returns <c>null</c> because the parameter is directly added to the result set.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineVisitor.VisitWindowsStyleParameter(System.CommandLine.Parser.Antlr.CommandLineParser.WindowsStyleParameterContext)">
+            <summary>
+            Is called when the visitor reaches a Windows style parameter.
+            </summary>
+            <param name="context">The context, which contains all the information about the Windows style parameter.</param>
+            <returns>Returns <c>null</c> because the parameter is directly added to the result set.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterNameAttribute">
+            <summary>
+            Represents an attribute, which can be used to specify the name of the command line parameter with which the property or the constructor parameter marked by this attribute is to be matched.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterNameAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.ParameterNameAttribute"/> instance.
+            </summary>
+            <param name="parameterName">The name of the command line parameter with which the property marked by this attribute is to be matched.</param>
+            <param name="parameterAlias">The alias for the command line parameter with which the property marked by this attribute can be alternatively matched.</param>
+            <exception cref="T:System.ArgumentNullException">If the parameter name if <c>null</c> or white space, then a <see cref="T:System.ArgumentNullException"/> exception is thrown.</exception>
+            <exception cref="T:System.ArgumentException">If the parameter alias is not either <c>null</c> or a valid paramter name, then an <see cref="T:System.ArgumentException"/> exception is thrown.</exception>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParameterNameAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:System.CommandLine.Parser.ParameterNameAttribute"/> instance.
+            </summary>
+            <param name="parameterName">The name of the command line parameter with which the property marked by this attribute is to be matched.</param>
+            <exception cref="T:System.ArgumentNullException">If the parameter name if <c>null</c> or white space, then a <see cref="T:System.ArgumentNullException"/> exception is thrown.</exception>
+            <exception cref="T:System.ArgumentException">If the parameter alias is not either <c>null</c> or a valid paramter name, then an <see cref="T:System.ArgumentException"/> exception is thrown.</exception>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParameterNameAttribute.ParameterName">
+            <summary>
+            Gets or sets the name of the command line parameter with which the property marked by this attribute is to be matched.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParameterNameAttribute.ParameterAlias">
+            <summary>
+            Gets or sets the alias for the command line parameter with which the property marked by this attribute can be alternatively matched.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.CommandLineParser">
+            <summary>
+            Represents a parser, which is able to parse command line parameters and convert them to strongly-typed .NET data types.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.CommandLineParser.defaultParameterCollectionConversionMap">
+            <summary>
+            Contains a map of all types supported for default parameters, that maps the type to a conversion method, which converts the original values into the specified collection type.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.CommandLineParser.parameterConverters">
+            <summary>
+            Contains the parameter converters, which are used to convert command line parameters to actual values.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.FindBestMatchingParameterConverter(System.Type,System.CommandLine.Parser.Parameters.Parameter)">
+            <summary>
+            Finds the paramter converter, which is able to convert the specified parameter to the specified type.
+            </summary>
+            <param name="propertyType">The type of the property to which the parameter value is to be converted.</param>
+            <param name="parameter"></param>
+            <returns>Returns the parameter converter, which is able to convert the specified parameter into the specified type. If no matching parameter converter could be found, then <c>null</c> is returned.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.RegisterParameterConverter(System.CommandLine.Parser.ParameterConverters.IParameterConverter)">
+            <summary>
+            Registers a new parameter converter with the parser.
+            </summary>
+            <param name="parameterConverter">The parameter converter, which is to be registered.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.UnregisterParameterConverter(System.CommandLine.Parser.ParameterConverters.IParameterConverter)">
+            <summary>
+            Unregisters the specified parameter converter.
+            </summary>
+            <param name="parameterConverter">The parameter converter that is to be unregistered.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Parse(System.String)">
+            <summary>
+            Parses the specified command line parameters.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <returns>Returns the parsed parameters.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.ParseAsync(System.String)">
+            <summary>
+            Parses the specified command line parameters asynchronously.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <returns>Returns the parsed parameters.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Instantiate(System.CommandLine.Parser.ParameterBag,System.Type)">
+            <summary>
+            Instantiates a new object. The constructor parameters are taken from the specified bag of parameters.
+            </summary>
+            <param name="parameterBag">The parameter bag from which the constructor parameters abre being taken.</param>
+            <param name="returnType">The type of object that is to be instantiated.</param>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the created instance of the specified type.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.InstantiateAsync(System.CommandLine.Parser.ParameterBag,System.Type)">
+            <summary>
+            Instantiates a new object asynchronously. The constructor parameters are taken from the specified bag of parameters.
+            </summary>
+            <param name="parameterBag">The parameter bag from which the constructor parameters abre being taken.</param>
+            <param name="returnType">The type of object that is to be instantiated.</param>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the created instance of the specified type.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Instantiate``1(System.CommandLine.Parser.ParameterBag)">
+            <summary>
+            Instantiates a new object. The constructor parameters are taken from the specified bag of parameters.
+            </summary>
+            <typeparam name="T">The type of object that is to be instantiated.</typeparam>
+            <param name="parameterBag">The parameter bag from which the constructor parameters abre being taken.</param>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the created instance of the specified type.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.InstantiateAsync``1(System.CommandLine.Parser.ParameterBag)">
+            <summary>
+            Instantiates a new object asynchronously. The constructor parameters are taken from the specified bag of parameters.
+            </summary>
+            <typeparam name="T">The type of object that is to be instantiated.</typeparam>
+            <param name="parameterBag">The parameter bag from which the constructor parameters abre being taken.</param>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns the created instance of the specified type.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Inject(System.CommandLine.Parser.ParameterBag,System.Object)">
+            <summary>
+            Injects the command line parameters from the parameter bag into the specified object instance.
+            </summary>
+            <param name="parameterBag">The parameter bag, which contains the command line parameters that are to be injected into an instance of the specified type.</param>
+            <param name="instance">The object instance into which the command line parameters are to be injected.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.InjectAsync(System.CommandLine.Parser.ParameterBag,System.Object)">
+            <summary>
+            Injects the command line parameters from the parameter bag into the specified object instance asynchronously.
+            </summary>
+            <param name="parameterBag">The parameter bag, which contains the command line parameters that are to be injected into an instance of the specified type.</param>
+            <param name="instance">The object instance into which the command line parameters are to be injected.</param>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Bind(System.String,System.Type)">
+            <summary>
+            Parses the specified command line parameters and converts them into the specified type.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <param name="returnType">The type that is to be instantiated and injected with the parameters from the command line.</param>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns an instance of the specified type injected with the parameters from the command line.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.BindAsync(System.String,System.Type)">
+            <summary>
+            Parses the specified command line parameters and converts them into the specified type asynchronously.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <param name="returnType">The type that is to be instantiated and injected with the parameters from the command line.</param>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns an instance of the specified type injected with the parameters from the command line.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.Bind``1(System.String)">
+            <summary>
+            Parses the specified command line parameters and converts them into the specified type.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <typeparam name="T">The type that is to be instantiated and injected with the parameters from the command line.</typeparam>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns an instance of the specified type injected with the parameters from the command line.</returns>
+        </member>
+        <member name="M:System.CommandLine.Parser.CommandLineParser.BindAsync``1(System.String)">
+            <summary>
+            Parses the specified command line parameters and converts them into the specified type asynchronously.
+            </summary>
+            <param name="commandLineParameters">The command line parameters that are to be parsed.</param>
+            <typeparam name="T">The type that is to be instantiated and injected with the parameters from the command line.</typeparam>
+            <exception cref="T:System.CommandLine.Parser.CommandLineParserException">If there are any lexical or syntactical errors during the parsing of the command line parameters, then a <see cref="T:System.CommandLine.Parser.CommandLineParserException"/> exception is thrown.</exception>
+            <exception cref="T:System.InvalidOperationException">If no constructor whose parameter list can be satisfied could be found or an error occurred during the instantiation of the object, then an <see cref="T:System.InvalidOperationException"/> exception is thrown.</exception>
+            <returns>Returns an instance of the specified type injected with the parameters from the command line.</returns>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParserErrorKind">
+            <summary>
+            Represents an enumeration for the different kinds of errors that can occur in the parser.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParserErrorKind.Lexical">
+            <summary>
+            The error occurred during the lexical analysis.
+            </summary>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParserErrorKind.Syntactical">
+            <summary>
+            The error occurred during the syntactical analysis.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParserErrorListener">
+            <summary>
+            Represents a listener, which listens to errors during the parsing of the input and makes errors available in a simple way.
+            </summary>
+        </member>
+        <member name="M:System.CommandLine.Parser.ParserErrorListener.SyntaxError(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)">
+            <summary>
+            Is invoked when a syntactical error is detected in the parser.
+            </summary>
+            <param name="recognizer">The parser that found the syntactical error.</param>
+            <param name="offendingSymbol">The ID of the symbol that caused the error.</param>
+            <param name="line">The line number where the error occurred.</param>
+            <param name="charPositionInLine">The index of the character where the error starts within the current line.</param>
+            <param name="msg">The error message that was produced.</param>
+            <param name="e">The original exception that was thrown when the error occurred.</param>
+        </member>
+        <member name="F:System.CommandLine.Parser.ParserErrorListener.errors">
+            <summary>
+            Contains all the syntactical errors that have been found.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParserErrorListener.Errors">
+            <summary>
+            Gets all the syntactical errors that have been found.
+            </summary>
+        </member>
+        <member name="T:System.CommandLine.Parser.ParameterBag">
+            <summary>
+            Represents a bag, which is able to contain parsed properties.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParameterBag.CommandLineParameters">
+            <summary>
+            Gets the original command line parameters from which the properties were parsed.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParameterBag.Parameters">
+            <summary>
+            Gets a dictionary of the command line parameters that have been parsed, where the key is the name of the parameter.
+            </summary>
+        </member>
+        <member name="P:System.CommandLine.Parser.ParameterBag.DefaultParameters">
+            <summary>
+            Gets a collection of the default parameters.
+            </summary>
+        </member>
+    </members>
+</doc>
