@@ -28,11 +28,12 @@ namespace CSVDataReceiver
 			Stopwatch sw = new Stopwatch();
 			try
 			{
+				Console.WriteLine("Csv import begins");
 				sw.Start();
 				Importer importer = new Importer(file, datasource, database);
 				importer.Import();
 				sw.Stop();
-				Console.WriteLine("The records are inserted");
+				Console.WriteLine("Csv import ends");
 				Console.WriteLine("Stopwatch elapsed: {0}", sw.ElapsedMilliseconds);
 			}
 			catch (FileNotFoundException ex)
