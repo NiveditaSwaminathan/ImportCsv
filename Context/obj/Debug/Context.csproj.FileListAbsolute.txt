@@ -13,3 +13,18 @@ D:\Solutions\ImportCSVFile\Context\obj\Debug\Context.csproj.CoreCompileInputs.ca
 D:\Solutions\ImportCSVFile\Context\obj\Debug\Context.csproj.CopyComplete
 D:\Solutions\ImportCSVFile\Context\obj\Debug\Context.dll
 D:\Solutions\ImportCSVFile\Context\obj\Debug\Context.pdb
+D:\Project Notes\ImportCsv\Context\bin\Debug\Context.dll.config
+D:\Project Notes\ImportCsv\Context\bin\Debug\Context.dll
+D:\Project Notes\ImportCsv\Context\bin\Debug\Context.pdb
+D:\Project Notes\ImportCsv\Context\bin\Debug\EntityFramework.dll
+D:\Project Notes\ImportCsv\Context\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project Notes\ImportCsv\Context\bin\Debug\Model.dll
+D:\Project Notes\ImportCsv\Context\bin\Debug\Model.pdb
+D:\Project Notes\ImportCsv\Context\bin\Debug\Model.dll.config
+D:\Project Notes\ImportCsv\Context\bin\Debug\EntityFramework.xml
+D:\Project Notes\ImportCsv\Context\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project Notes\ImportCsv\Context\obj\Debug\Context.csprojAssemblyReference.cache
+D:\Project Notes\ImportCsv\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
+D:\Project Notes\ImportCsv\Context\obj\Debug\Context.csproj.CopyComplete
+D:\Project Notes\ImportCsv\Context\obj\Debug\Context.dll
+D:\Project Notes\ImportCsv\Context\obj\Debug\Context.pdb

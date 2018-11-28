@@ -6,7 +6,6 @@ namespace ImportCSV
 {
 	public class SalesLogRepository
 	{
-		private readonly StorageContext _storageContext;
 		private readonly string _connectionString;
 
 		private string errorLog;
@@ -17,7 +16,6 @@ namespace ImportCSV
 		public SalesLogRepository(string connectionString)
 		{
 			_connectionString = connectionString;
-			_storageContext = new StorageContext(connectionString);
 		}
 
 		/// <summary>

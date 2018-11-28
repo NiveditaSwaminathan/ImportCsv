@@ -56,10 +56,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Context\Context.csproj">
-      <Project>{27be1bc2-8636-4c3f-a3e7-0b57361fde87}</Project>
-      <Name>Context</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{79be485c-0545-45c5-ab45-ee9753b61b96}</Project>
       <Name>Model</Name>
